@@ -12,12 +12,11 @@ def main():
     """
     Main function of the program
     """
-    # Check if database already exists
-    connection = sqlite3.connect(DATABASE_FILENAME)
-    cursor = connection.cursor()
     if os.path.exists(DATABASE_FILENAME):
         print("Database exists already")
-
+        # Check if database already exists
+        connection = sqlite3.connect(DATABASE_FILENAME)
+        cursor = connection.cursor()
         # get every table in database and print the name of the table along with the number of rows
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
         table_list = cursor.fetchall()
@@ -30,7 +29,7 @@ def main():
         # get input from user
         prompt = "Would you like to erase database and create a new one? (y/n): "
         answer = input(prompt).lower()
-        if answer == "y" or "yes":
+        if answer == 'y':
             # delete database and create new one
             connection.close()
             os.remove(DATABASE_FILENAME)
