@@ -1,4 +1,7 @@
-- url: https://www.gamestop.ca/Switch/Games/727749/the-legend-of-zelda-breath-of-the-wild-bilingual-version
-- url: https://www.gamestop.ca/Switch/Games/727918/mario-kart-8-deluxe
-- url: https://www.gamestop.ca/Switch/Games/877926/balan-wonderworld
-- url: https://www.gamestop.ca/Switch/Games/900459/kirby-s-return-to-dream-land-deluxe
+- name: "The Legend of Zelda: Breath of the Wild"
+  gamestop_url: https://www.gamestop.ca/Switch/Games/727749/the-legend-of-zelda-breath-of-the-wild-bilingual-version
+  source_url: https://www.thesource.ca/en-ca/p/108063993
+- gamestop_url: https://www.gamestop.ca/Switch/Games/727918/mario-kart-8-deluxe
+  name: "Mario Kart 8 Deluxe"
+- gamestop_url: https://www.gamestop.ca/Switch/Games/877926/balan-wonderworld
+- gamestop_url: https://www.gamestop.ca/Switch/Games/900459/kirby-s-return-to-dream-land-deluxe
